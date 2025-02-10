@@ -18,19 +18,19 @@ add_routes(
     path="/ollama"
 )
 
-model=Ollama(model="mistral")
+llm=Ollama(model="mistral")
 
 prompt1=ChatPromptTemplate.from_template("Write an essay about {topic} with 100 words")
 prompt2=ChatPromptTemplate.from_template("Write me a poem about {topic} with 100 words")
 
 add_routes(
     app,
-    prompt1|model,
+    prompt1|llm,
     path="/essay"
 )
 add_routes(
     app,
-    prompt2|model,
+    prompt2|llm,
     path="/poem"
 )
 
