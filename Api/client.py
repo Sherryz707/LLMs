@@ -16,7 +16,7 @@ def get_poem_response(input_text):
 
 # streamlit framework
 
-st.title("Langchain Demo with LLAMA2 API")
+st.title("Langchain Demo with Mistral API")
 essay_text=st.text_input("Write an essay on")
 poem_text=st.text_input("Write a poem on")
 
