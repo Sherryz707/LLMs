@@ -1,0 +1,8 @@
+ipykernel
+bs4
+langchain_core
+python-dotenv
+langchain_community
+pypdf
+chromadb
+faiss-cpu
